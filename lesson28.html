@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            display: flex;
+        }
+
+
+        .square {
+            flex: 1;
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            background-color: #f7f7f7f8;
+            font-size: 3rem;
+        }
+
+        #s1 {
+            height: 100px;
+            padding: 40px;
+            background-color: red;
+
+        }
+
+        #s2 {
+            height: 100px;
+            padding: 40px;
+            background-color: green;
+
+        }
+
+        #s3 {
+            height: 100px;
+            padding: 40px;
+            background-color: yellowgreen;
+
+        }
+
+        #s4 {
+            height: 100px;
+            padding: 40px;
+            background-color: yellow;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center">
+        example of document method
+
+    </h1>
+    <hr>
+
+    <div class="container">
+        <div id="square_1" class="square" align="center"></div>
+        <div id=" square_2" class="square" align="center"></div>
+        <div id="answer" class="square" align="center"></div>
+    </div>
+    <div align="center">
+        <button id="s1" class="btn" onclick="add()">add</button>
+        <button id="s2" class="btn" onclick="sub()">sub</button>
+        <button id="s3" class="btn" onclick="mul()">mul</button>
+        <button id="s4" class="btn" onclick="div()">div</button>
+
+    </div>
+
+    <script>
+        var square_1 = prompt(enter the value of square_1);
+        var square_2 = prompt(enter the value of square_2);
+        var square = "";
+
+
+        function add() {
+            square = square_1 + square_2;
+            console.log(square)
+            document.getElementById("answer").innerHTML = square
+        }
+
+        function sub() {
+            square = square_1 - square_2;
+            console.log(square)
+            document.getElementById("answer").innerHTML = square
+        }
+
+        function mul() {
+            square = square_1 * square_2;
+            console.log(square)
+            document.getElementById("answer").innerHTML = square
+        }
+
+        function div() {
+            square = square_1 / square_2;
+            console.log(square)
+            document.getElementById("answer").innerHTML = square
+        }
+
+        console.log(square);
+
+
+    </script>
+
+</body>
+
+</html>

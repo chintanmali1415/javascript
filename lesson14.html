@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+      var  monthlyincome=30000
+        var income = monthlyincome*12
+        var taxrate 
+        var answer
+
+        if (income < 300000) {
+            taxrate = 5 
+        }
+        else if (income >= 300000 <= 500000)
+        {
+            taxrate = 10 
+        }
+        else if ( income >= 500000< 800000 )
+        {
+             taxrate =20
+        }
+        else if (income >= 800000 )
+        {
+            taxrate =30
+        }
+
+        var tax = income* taxrate/100
+        var answer= income - tax 
+
+        console.log('answer'+ answer);
+    </script>
+</body>
+
+</html>

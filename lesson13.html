@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <Script>
+        var unit = 320
+        var price = 0
+        var answer
+        if (unit < 100) {
+            price = 1
+        }
+        else if (unit > 100 && unit < 200
+        )
+        {
+            price = 2
+        }
+        else if ( unit> 200 && unit < 300)
+        {
+            price =3 
+        }
+        else if (unit> 300 && unit < 400 )
+        { 
+            price =4 
+        }
+        else if ( unit> 400)
+        { 
+            price = 5 
+        }
+        answer=price*unit;
+        var tax=answer*5/100
+         var totalamount =tax+answer;
+            console.log('answer '+totalamount);
+        
+    </Script>
+</body>
+
+</html>
